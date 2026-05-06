@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohamed H. Mousa</title>
+  <title>Mohamed H. Mousa, Ph.D.</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -17,65 +17,150 @@
       align-items: center;
     }
 
+    /* ── HEADER ── */
     header {
       width: 100%;
       background: #1a1a2e;
       color: #fff;
-      padding: 48px 24px 36px;
+      padding: 56px 24px 44px;
       text-align: center;
+    }
+
+    header img {
+      border-radius: 50%;
+      border: 4px solid #0f6e56;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     header h1 {
       font-size: 2.6rem;
       letter-spacing: 1px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
+    }
+
+    header .subtitle {
+      font-size: 1.1rem;
+      color: #1D9E75;
+      font-weight: 600;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
     }
 
     header p.intro {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #b0b8d1;
-      max-width: 620px;
-      margin: 0 auto 24px;
-      line-height: 1.7;
+      max-width: 680px;
+      margin: 0 auto 28px;
+      line-height: 1.8;
     }
 
-    .linkedin-btn {
+    .header-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .header-btn {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      background: #0077b5;
+      gap: 7px;
       color: #fff;
       text-decoration: none;
-      padding: 10px 22px;
+      padding: 9px 18px;
       border-radius: 6px;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      transition: background 0.2s;
+      transition: opacity 0.2s, transform 0.15s;
+      border: 1.5px solid transparent;
+    }
+    .header-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+
+    .btn-linkedin { background: #0077b5; }
+    .btn-scholar  { background: #4285F4; }
+    .btn-rgate    { background: #00CCBB; }
+    .btn-github   { background: #333; }
+
+    .header-btn svg {
+      width: 17px; height: 17px; fill: #fff; flex-shrink: 0;
     }
 
-    .linkedin-btn:hover { background: #005983; }
-
-    .linkedin-btn svg {
-      width: 18px;
-      height: 18px;
-      fill: #fff;
-      flex-shrink: 0;
-    }
-
+    /* ── MAIN ── */
     main {
       width: 100%;
       max-width: 960px;
-      padding: 40px 24px;
+      padding: 48px 24px 60px;
     }
 
-    main h2 {
-      font-size: 1.3rem;
+    section { margin-bottom: 52px; }
+
+    .section-title {
+      font-size: 1.25rem;
       color: #1a1a2e;
-      margin-bottom: 16px;
-      border-left: 4px solid #0077b5;
+      margin-bottom: 20px;
+      border-left: 4px solid #0f6e56;
       padding-left: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
     }
 
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .skill-group {
+      background: #fff;
+      border: 1px solid #dde3ed;
+      border-radius: 10px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .skill-group h3 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #0f6e56;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .tag {
+      background: #eef7f3;
+      color: #0a5240;
+      border-radius: 5px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      padding: 4px 10px;
+      border: 1px solid #c2e0d6;
+    }
+
+    .tag.lang {
+      background: #e8f0fe;
+      color: #0c3b7a;
+      border-color: #b3caf7;
+    }
+
+    .tag.tool {
+      background: #fdf3e7;
+      color: #7a3e00;
+      border-color: #f5c98a;
+    }
+
+    /* ── CV ── */
     .cv-container {
       width: 100%;
       border: 1px solid #d0d7e3;
@@ -85,6 +170,7 @@
       background: #fff;
     }
 
+    .cv-container object,
     .cv-container iframe {
       display: block;
       width: 100%;
@@ -93,74 +179,136 @@
     }
 
     .cv-download {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       margin-top: 14px;
       color: #0077b5;
       text-decoration: none;
       font-size: 0.9rem;
+      font-weight: 500;
     }
-
     .cv-download:hover { text-decoration: underline; }
 
+    /* ── FOOTER ── */
     footer {
       margin-top: auto;
       padding: 24px;
       font-size: 0.82rem;
       color: #888;
       text-align: center;
+      border-top: 1px solid #e0e4ec;
+      width: 100%;
     }
   </style>
 </head>
 <body>
 
-  
   <header>
-  <center>
-  <img src="https://github.com/M-Hisham.png" width="140" height="140" style="border-radius:50%;" alt="Profile photo">
-  </center>
-    <h1>Mohamed H. Mousa</h1>
+    <img src="https://github.com/M-Hisham.png" width="130" height="130" alt="Mohamed Mousa profile photo" />
+    <h1>Mohamed H. Mousa, Ph.D.</h1>
+    <p class="subtitle">Neuroengineer &amp; Research Scientist</p>
     <p class="intro">
-      <!-- Add a short intro about yourself here -->
-      Neuroengineer & research Scientist
+      I specialize in computational neuroscience, high-density electrophysiology, and machine learning — building end-to-end pipelines that translate complex neural signals into actionable insight. My work spans ALS biomarker discovery, spinal network dynamics, motoneuron biophysics, and brain-computer interface research. I am driven by the challenge of bridging biology and engineering to develop technologies that restore and extend human function.
     </p>
-    <a
-      class="linkedin-btn"
-      href="https://www.linkedin.com/in/mohamed-h-mousa-20872133/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <!-- LinkedIn icon -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20.447 20.452H17.21v-5.569c0-1.327-.027-3.036-1.849-3.036-1.851
-          0-2.135 1.445-2.135 2.939v5.666H9.99V9h3.114v1.561h.045c.434-.82
-          1.495-1.684 3.077-1.684 3.291 0 3.899 2.167 3.899 4.984v6.591zM5.337
-          7.433a1.81 1.81 0 1 1 0-3.621 1.81 1.81 0 0 1 0 3.621zm1.604
-          13.019H3.732V9h3.209v11.452zM22.225 0H1.771C.792 0 0 .774 0
-          1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.205 24 24
-          23.226 24 22.271V1.729C24 .774 23.205 0 22.225 0z"/>
-      </svg>
-      Connect on LinkedIn
-    </a>
+    <div class="header-links">
+      <a class="header-btn btn-linkedin" href="https://www.linkedin.com/in/mohamed-h-mousa-20872133/" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452H17.21v-5.569c0-1.327-.027-3.036-1.849-3.036-1.851 0-2.135 1.445-2.135 2.939v5.666H9.99V9h3.114v1.561h.045c.434-.82 1.495-1.684 3.077-1.684 3.291 0 3.899 2.167 3.899 4.984v6.591zM5.337 7.433a1.81 1.81 0 1 1 0-3.621 1.81 1.81 0 0 1 0 3.621zm1.604 13.019H3.732V9h3.209v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.205 24 24 23.226 24 22.271V1.729C24 .774 23.205 0 22.225 0z"/></svg>
+        LinkedIn
+      </a>
+      <a class="header-btn btn-scholar" href="https://scholar.google.com/citations?user=kM5dM2kAAAAJ&hl=en" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+        Google Scholar
+      </a>
+      <a class="header-btn btn-rgate" href="https://www.researchgate.net/profile/Mohamed-Mousa-16" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a12.195 12.195 0 0 0-.32 2.205c-.01.245-.013.5-.01.76-.017.213-.013.42 0 .62.08 1.055.335 1.91.765 2.56.432.652 1.07 1.027 1.912 1.122.58.065 1.1-.022 1.565-.263.46-.24.824-.613 1.09-1.116l.09-.176v1.348h2.44V5.15h-4.41c.006.108.01.216.012.323.005.285.005.572 0 .857-.01.426-.03.84-.06 1.243-.032.4-.073.78-.122 1.14-.05.36-.108.695-.175.998-.107.5-.25.93-.424 1.292a2.9 2.9 0 0 1-.614.877 2.4 2.4 0 0 1-.838.527c-.31.112-.656.168-1.036.168-.416 0-.777-.077-1.082-.232a2.14 2.14 0 0 1-.762-.655 3.027 3.027 0 0 1-.454-1.014 5.05 5.05 0 0 1-.148-1.3c0-.47.05-.898.148-1.28.098-.384.244-.712.44-.985.196-.274.436-.485.72-.633.283-.15.608-.224.973-.224.37 0 .694.08.973.24.28.16.508.382.688.67l1.87-1.163C19.4.438 18.6.002 17.585 0c-.764 0-1.453.17-2.066.507a4.62 4.62 0 0 0-1.524 1.39 6.418 6.418 0 0 0-.943 2.044 9.26 9.26 0 0 0-.318 2.49c0 .907.107 1.738.32 2.494.213.754.527 1.406.94 1.955a4.3 4.3 0 0 0 1.526 1.283c.612.304 1.31.456 2.094.456.757 0 1.43-.148 2.016-.443a4.3 4.3 0 0 0 1.47-1.226c.392-.52.685-1.136.877-1.845.19-.708.284-1.484.284-2.327V5.15H24V2.77h-4.414zM5.13 3.4H2.7v13.202H.27V3.4H0V1.02h5.13zM8.757 7.9c.42 0 .79.073 1.107.218.317.147.582.354.797.622.215.267.374.585.477.952.103.368.154.77.154 1.207v.44H6.75c.04.52.2.924.48 1.212.278.288.657.432 1.134.432.34 0 .637-.072.888-.217.25-.144.44-.352.57-.622l1.38.777c-.26.47-.637.832-1.133 1.088-.496.255-1.076.383-1.74.383-.47 0-.903-.076-1.298-.228a2.927 2.927 0 0 1-1.022-.658 3.005 3.005 0 0 1-.67-1.045 3.76 3.76 0 0 1-.24-1.382c0-.49.078-.944.232-1.36.154-.415.375-.774.663-1.076a3.02 3.02 0 0 1 1.032-.706c.4-.168.843-.252 1.33-.252zm-.04 1.44c-.41 0-.748.12-1.014.358-.265.238-.43.574-.495 1.007h2.935c-.03-.433-.163-.77-.4-1.01-.236-.24-.566-.36-.988-.36z"/></svg>
+        ResearchGate
+      </a>
+      <a class="header-btn btn-github" href="https://github.com/M-Hisham" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        GitHub
+      </a>
+    </div>
   </header>
 
   <main>
-    <h2>My CV</h2>
-      <object
-    data="Mousa - CV 2026.pdf"
-    type="application/pdf"
-    width="100%"
-    height="860px"
-  >
-  <p>PDF cannot be displayed. <a href="Mousa - CV 2026.pdf">Download</a></p>
-  </object> 
-    </div>
-    <a class="cv-download" href="Mousa - CV 2026.pdf" download>
-      ⬇ Download CV (PDF)
-    </a>
+
+    <!-- SKILLS -->
+    <section>
+      <h2 class="section-title">Skills &amp; Expertise</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Domain Expertise</h3>
+          <div class="skill-tags">
+            <span class="tag">Computational Neuroscience</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Signal &amp; Image Processing</span>
+            <span class="tag">Network &amp; Graph Theory</span>
+            <span class="tag">Nonlinear Dynamics</span>
+            <span class="tag">Statistical Analysis</span>
+            <span class="tag">Biophysical Modeling</span>
+            <span class="tag">Clinical Research</span>
+            <span class="tag">Brain-Computer Interfaces</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="tag lang">Python</span>
+            <span class="tag lang">MATLAB</span>
+            <span class="tag lang">R</span>
+            <span class="tag lang">C / C++</span>
+            <span class="tag lang">JavaScript</span>
+            <span class="tag lang">SQL</span>
+            <span class="tag lang">NEURON (Hoc, NMODL)</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Libraries &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="tag tool">NumPy</span>
+            <span class="tag tool">SciPy</span>
+            <span class="tag tool">Pandas</span>
+            <span class="tag tool">PyTorch</span>
+            <span class="tag tool">Matplotlib</span>
+            <span class="tag tool">Seaborn</span>
+            <span class="tag tool">Plotly</span>
+            <span class="tag tool">statsmodels</span>
+            <span class="tag tool">Pingouin</span>
+            <span class="tag tool">SAS</span>
+            <span class="tag tool">SpikeInterface</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section>
+      <h2 class="section-title">My CV</h2>
+      <div class="cv-container">
+        <object
+          data="Mousa - CV 2026.pdf"
+          type="application/pdf"
+          width="100%"
+          height="860px"
+        >
+          <p style="padding: 24px; color: #555;">PDF cannot be displayed in your browser. <a href="Mousa - CV 2026.pdf">Download the CV instead</a>.</p>
+        </object>
+      </div>
+      <a class="cv-download" href="Mousa - CV 2026.pdf" download>
+        ⬇ Download CV (PDF)
+      </a>
+    </section>
+
   </main>
 
   <footer>
-    &copy; 2026 Mohamed Mousa
+    &copy; 2026 Mohamed H. Mousa, Ph.D. &nbsp;·&nbsp; Philadelphia, PA &nbsp;·&nbsp;
+    <a href="mailto:Mohamed.Mousa@Temple.edu" style="color: #0077b5;">Mohamed.Mousa@Temple.edu</a>
   </footer>
 
 </body>
