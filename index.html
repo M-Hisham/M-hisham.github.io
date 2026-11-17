@@ -4,6 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohamed H. Mousa, Ph.D.</title>
+  <meta name="description" content="Mohamed H. Mousa, Ph.D. — neuroengineer and computational neuroscientist studying spinal circuits, high-density electrophysiology (HD-EMG), biophysical modeling, and ALS biomarkers." />
+  <link rel="canonical" href="https://m-hisham.github.io/" />
+  <link rel="icon" href="https://github.com/M-Hisham.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://m-hisham.github.io/" />
+  <meta property="og:title" content="Mohamed H. Mousa, Ph.D. — Neuroengineer &amp; Research Scientist" />
+  <meta property="og:description" content="Computational neuroscience, high-density electrophysiology, and machine learning: spinal network dynamics, motoneuron biophysics, and ALS biomarker discovery." />
+  <meta property="og:image" content="https://github.com/M-Hisham.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Mohamed H. Mousa, Ph.D." />
+  <meta name="twitter:description" content="Computational neuroscience, high-density electrophysiology, and machine learning." />
+  <meta name="twitter:image" content="https://github.com/M-Hisham.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -85,6 +97,7 @@
     .btn-rgate    { background: #00CCBB; }
     .btn-github   { background: #333; }
     .btn-resume   { background: #0f6e56; }
+    .btn-media    { background: #8e44ad; }
 
     .header-btn svg {
       width: 17px; height: 17px; fill: #fff; flex-shrink: 0;
@@ -161,6 +174,57 @@
       border-color: #f5c98a;
     }
 
+    /* ── MEDIA & AWARDS ── */
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .media-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #eef1f6;
+    }
+    .media-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .media-item:first-of-type { padding-top: 0; }
+
+    .media-item .tag { flex-shrink: 0; }
+
+    .media-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #1a1a2e;
+      line-height: 1.4;
+    }
+    a.media-title { color: #0f6e56; text-decoration: none; }
+    a.media-title:hover { text-decoration: underline; }
+
+    .media-meta {
+      font-size: 0.82rem;
+      color: #777;
+      margin-top: 2px;
+    }
+
+    .media-meta strong { color: #333; }
+
+    .section-more {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.88rem;
+      color: #666;
+    }
+    .section-more a { color: #0f6e56; font-weight: 600; text-decoration: none; }
+    .section-more a:hover { text-decoration: underline; }
+
+    .media-empty {
+      font-size: 0.88rem;
+      color: #999;
+      font-style: italic;
+    }
+
     /* ── CV ── */
     .cv-container {
       width: 100%;
@@ -229,10 +293,56 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
         GitHub
       </a>
+      <a class="header-btn btn-media" href="#media">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v7a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V22h2v-3.08A7 7 0 0 0 19 12h-2z"/></svg>
+        Podcasts &amp; Blogs
+      </a>
     </div>
   </header>
 
   <main>
+
+    <!-- NEWS -->
+    <section id="news">
+      <h2 class="section-title">News</h2>
+      <div class="skill-group">
+        <div class="media-item">
+          <span class="tag tool">Nov 2026</span>
+          <div>
+            <div class="media-title">Poster at Neuroscience 2026 (SfN) &amp; SfN Trainee Professional Development Award</div>
+            <div class="media-meta">Washington, DC · also presented in the Early Career Poster Session</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">Nov 2026</span>
+          <div>
+            <div class="media-title">Poster at the Pre-SfN Motor Symposium</div>
+            <div class="media-meta">Georgetown University, Washington, DC</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">Sep 2026</span>
+          <div>
+            <div class="media-title">Selected participant &amp; short talk on HD-EMG, Myology Course</div>
+            <div class="media-meta">Nationwide Children's Hospital, Columbus, OH</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">Aug 2026</span>
+          <div>
+            <a class="media-title" href="https://doi.org/10.1523/JNEUROSCI.0784-26.2026" target="_blank" rel="noopener">New paper in the Journal of Neuroscience on the resting-state activity of lumbar spinal interneurons</a>
+            <div class="media-meta">Journal of Neuroscience · 2026</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag">Podcast</span>
+          <div>
+            <a class="media-title" href="https://ms.podbean.com/media/share/pb-bapth-16adebb" target="_blank" rel="noopener">Featured on the JNP Micro Podcast: Onion Skin or AHP firing scheme?</a>
+            <div class="media-meta">Journal of Neurophysiology · Podbean</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- SKILLS -->
     <section>
@@ -287,8 +397,170 @@
       </div>
     </section>
 
+    <!-- SELECTED PUBLICATIONS -->
+    <section id="publications">
+      <h2 class="section-title">Selected Publications</h2>
+      <div class="skill-group">
+        <div class="media-item">
+          <span class="tag tool">2026</span>
+          <div>
+            <a class="media-title" href="https://doi.org/10.1523/JNEUROSCI.0784-26.2026" target="_blank" rel="noopener">Activity and Functional Connectivity of Lumbar Spinal Interneurons at Rest: Irregular, Sparse Yet Structured</a>
+            <div class="media-meta"><strong>Mousa, M.H.</strong>, Zaback, M., Lemay, M.A., &amp; Thompson, C.K. · <em>Journal of Neuroscience</em></div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">2024</span>
+          <div>
+            <a class="media-title" href="https://scholar.google.com/scholar?q=%22Onion+skin+is+not+a+universal+firing+pattern+for+spinal+motoneurons%22" target="_blank" rel="noopener">Onion skin is not a universal firing pattern for spinal motoneurons: simulation study</a>
+            <div class="media-meta"><strong>Mousa, M.H.</strong>, Wages, N.P., &amp; Elbasiouny, S.M. · <em>Journal of Neurophysiology</em> 132(1) · <a href="#media" style="color:#8e44ad;">🎙 listen to the podcast</a></div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">2024</span>
+          <div>
+            <a class="media-title" href="https://scholar.google.com/scholar?q=%22Reductions+in+motor+unit+firing+are+associated+with+clinically+meaningful+leg+extensor+weakness+in+older+adults%22" target="_blank" rel="noopener">Reductions in motor unit firing are associated with clinically meaningful leg extensor weakness in older adults</a>
+            <div class="media-meta">Wages, N.P., <strong>Mousa, M.H.</strong>, Clark, L.A., Tavoian, D., Arnold, W.D., Elbasiouny, S.M., &amp; Clark, B.C. · <em>Calcified Tissue International</em> 114(1)</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">2021</span>
+          <div>
+            <a class="media-title" href="https://scholar.google.com/scholar?q=%22Estimating+the+effects+of+slicing+on+the+electrophysiological+properties+of+spinal+motoneurons%22" target="_blank" rel="noopener">Estimating the effects of slicing on the electrophysiological properties of spinal motoneurons under normal and disease conditions</a>
+            <div class="media-meta"><strong>Mousa, M.H.</strong> &amp; Elbasiouny, S.M. · <em>Journal of Neurophysiology</em></div>
+          </div>
+        </div>
+      </div>
+      <span class="section-more">16 peer-reviewed publications · <a href="https://scholar.google.com/citations?user=kM5dM2kAAAAJ&amp;hl=en" target="_blank" rel="noopener">Full list on Google Scholar →</a></span>
+    </section>
+
+    <!-- TALKS & POSTERS -->
+    <section id="talks">
+      <h2 class="section-title">Talks &amp; Posters</h2>
+      <div class="skill-group">
+        <div class="media-item">
+          <span class="tag tool">Nov 2026</span>
+          <div>
+            <div class="media-title">The Resting-State Organization of Lumbar Spinal Interneuron Networks and its Reconfiguration During Sensory-Evoked Motor Behaviors</div>
+            <div class="media-meta">Neuroscience 2026 (SfN), Washington, DC · Poster (also Early Career Poster Session)</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">Nov 2026</span>
+          <div>
+            <div class="media-title">Spinal interneurons exhibit distinct ensembles across timescales</div>
+            <div class="media-meta">Pre-SfN Motor Symposium, Georgetown University, Washington, DC · Poster</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">Sep 2026</span>
+          <div>
+            <div class="media-title">Using HD-EMG to investigate motoneuron firing in humans</div>
+            <div class="media-meta">Myology Course, Nationwide Children's Hospital, Columbus, OH · Short talk</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">Dec 2025</span>
+          <div>
+            <div class="media-title">Activity and Functional Connectivity of Lumbar Spinal Interneurons at Rest: Sparse Yet Structured</div>
+            <div class="media-meta">Neural Sciences Research Day, Temple University, Philadelphia</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">Jul 2025</span>
+          <div>
+            <div class="media-title">Resting State Activity of Lumbar Spinal Interneurons: Keeping the Motoneurons Warm through Distributed and Functionally Coupled Subpopulations</div>
+            <div class="media-meta">14th International Motoneuron Society Meeting, St. John's, Newfoundland, Canada</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">Nov 2023</span>
+          <div>
+            <div class="media-title">The role of computational models in experimental research: predictive vs. explanatory power</div>
+            <div class="media-meta">Neuroscience Gateway Satellite Workshop, George Washington University, DC · Invited talk</div>
+          </div>
+        </div>
+      </div>
+      <span class="section-more"><a href="#cv">Full list in my CV ↓</a></span>
+    </section>
+
+    <!-- MEDIA & OUTREACH -->
+    <section id="media">
+      <h2 class="section-title">Media &amp; Outreach</h2>
+      <div class="media-grid">
+
+        <div class="skill-group">
+          <h3>Podcasts</h3>
+          <div class="media-item">
+            <span class="tag">Podcast</span>
+            <div>
+              <a class="media-title" href="https://ms.podbean.com/media/share/pb-bapth-16adebb" target="_blank" rel="noopener">JNP Micro Podcast: Onion Skin or AHP firing scheme?</a>
+              <div class="media-meta">Journal of Neurophysiology · Podbean</div>
+            </div>
+          </div>
+          <!-- To add a podcast, copy a .media-item block above. -->
+        </div>
+
+        <div class="skill-group">
+          <h3>Blogs &amp; Articles</h3>
+          <p class="media-empty">Coming soon.</p>
+          <!-- To add a blog, replace the "Coming soon" line with:
+          <div class="media-item">
+            <span class="tag lang">Blog</span>
+            <div>
+              <a class="media-title" href="URL" target="_blank" rel="noopener">Post title</a>
+              <div class="media-meta">Outlet · Month Year</div>
+            </div>
+          </div>
+          -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- AWARDS & HONORS -->
+    <section id="awards">
+      <h2 class="section-title">Awards &amp; Honors</h2>
+      <div class="skill-group">
+        <div class="media-item">
+          <span class="tag tool">2026</span>
+          <div>
+            <div class="media-title">Trainee Professional Development Award (TPDA)</div>
+            <div class="media-meta">Society for Neuroscience (SfN) · Neuroscience 2026, Washington, DC (incl. $1,000 travel award)</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">2023</span>
+          <div>
+            <div class="media-title">Excellence Award, top PhD graduate student in Biomedical Engineering</div>
+            <div class="media-meta">Wright State University</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">2019</span>
+          <div>
+            <div class="media-title">Science Ambassador</div>
+            <div class="media-meta">Science Gateways Community Institute (SGCI) · $1,200 travel award</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">2016</span>
+          <div>
+            <div class="media-title">Best Paper Award</div>
+            <div class="media-meta">Cairo International Biomedical Engineering Conference (CIBEC)</div>
+          </div>
+        </div>
+        <div class="media-item">
+          <span class="tag tool">2013</span>
+          <div>
+            <div class="media-title">Graduated First in Class with Distinction</div>
+            <div class="media-meta">Cairo University</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CV -->
-    <section>
+    <section id="cv">
       <h2 class="section-title">My CV</h2>
       <div class="cv-container">
         <object
@@ -325,7 +597,7 @@
     &copy; 2026 Mohamed H. Mousa, Ph.D. &nbsp;·&nbsp; Philadelphia, PA &nbsp;·&nbsp;
     <a href="mailto:Mohamed.Mousa@Temple.edu" style="color: #0077b5;">Mohamed 'DOT' Mousa 'AT' Temple.edu</a>
     <br>
-                    Last updated on 26.Sept.2026
+                    Last updated on 17.Nov.2026
 
   </footer>
 
