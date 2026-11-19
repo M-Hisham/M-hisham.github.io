@@ -91,6 +91,8 @@
       border: 1.5px solid transparent;
     }
     .header-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .header-links + .header-links { margin-top: 10px; }
+    html { scroll-behavior: smooth; }
 
     .btn-linkedin { background: #0077b5; }
     .btn-scholar  { background: #4285F4; }
@@ -296,6 +298,22 @@
       <a class="header-btn btn-media" href="#media">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v7a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V22h2v-3.08A7 7 0 0 0 19 12h-2z"/></svg>
         Podcasts &amp; Blogs
+      </a>
+    </div>
+    <div class="header-links">
+      <a class="header-btn btn-resume" href="#cv">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V8h4.5"/>
+          <path d="M8 12h8M8 16h8M8 8h3" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        </svg>
+        CV
+      </a>
+      <a class="header-btn btn-resume" href="#resume">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V8h4.5"/>
+          <path d="M8 12h8M8 16h8M8 8h3" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        </svg>
+        Resume
       </a>
     </div>
   </header>
@@ -577,7 +595,7 @@
       </a>
     </section>
 
-  <div style="text-align:center; margin-top: 28px;">
+  <div id="resume" style="text-align:center; margin-top: 28px;">
     <a class="header-btn btn-resume" href="Mousa - Resume 2026.pdf" target="_blank" rel="noopener">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V8h4.5"/>
